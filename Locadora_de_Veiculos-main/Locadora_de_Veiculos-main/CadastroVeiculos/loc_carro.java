@@ -1,31 +1,18 @@
+package CadastroVeiculos;
+
 public class loc_carro{
-    protected String modelo;
+    protected String Modelo;
     protected int ano;
-    protected int km;
-    protected boolean cambio;
+    protected int Km;
+    protected boolean marcha;
     protected int placa;
     protected int id_veiculo;
     protected String marca;
     protected  String descricao;
     protected float preco;
 
-//    se o cabio for true e automatico o carro
-
-
-    public loc_carro(String modelo, int ano, int km, boolean cambio, int placa, int id_veiculo, String marca, String descricao, float preco) {
-        this.modelo = modelo;
-        this.ano = ano;
-        this.km = km;
-        this.cambio = cambio;
-        this.placa = placa;
-        this.id_veiculo = id_veiculo;
-        this.marca = marca;
-        this.descricao = descricao;
-        this.preco = preco;
-    }
-
     public String getModelo() {
-        return modelo;
+        return Modelo;
     }
 
     public int getAno() {
@@ -33,11 +20,11 @@ public class loc_carro{
     }
 
     public int getKm() {
-        return km;
+        return Km;
     }
 
-    public boolean isCambio() {
-        return cambio;
+    public boolean isMarcha() {
+        return marcha;
     }
 
     public int getPlaca() {
@@ -61,7 +48,7 @@ public class loc_carro{
     }
 
     public void setModelo(String modelo) {
-        modelo = modelo;
+        Modelo = modelo;
     }
 
     public void setAno(int ano) {
@@ -69,11 +56,11 @@ public class loc_carro{
     }
 
     public void setKm(int km) {
-        km = km;
+        Km = km;
     }
 
     public void setMarcha(boolean marcha) {
-        this.cambio = cambio;
+        this.marcha = marcha;
     }
 
     public void setPlaca(int placa) {
